@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* text colors */
+  --accent-cl: #df3d3a;
+  --main-cl: rgba(255, 255, 255, 0.8);
+  --title-cl: #e7e7e7;
+  --btn-cl: rgba(255, 255, 255, 0.9);
+  --quote-cl: rgba(255, 255, 255, 0.4);
+  --footer-cl: rgba(255, 255, 255, 0.3);
+
+  /* bg colors */
+  --main-bg-cl: #191919;
+  --btn-bg-cl: #df3d3a;
+
+  /* fonts */
+  --main-font: Gilroy, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* COMMON STYLES */
+.page {
+  font-family: var(--main-font);
+  font-size: 20px;
+  line-height: 1.45;
+  color: var(--main-cl);
+
+  background-color: var(--main-bg-cl);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: var(--title-cl);
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.25;
+  color: var(--title-cl);
+}
+
+.btn {
+  width: 400px;
+  height: 68px;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: var(--btn-cl);
+
+  background-color: var(--btn-bg-cl);
+  border: none;
+  cursor: pointer;
+}
+
+/* HEADER */
+.nav {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.nav-link {
+  color: currentColor;
+}
+
+/* HERO */
+.hero-description {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 74px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: var(--title-cl);
+}
+
+/* HISTORY */
+.history-author {
+  font-size: 16px;
+  color: var(--quote-cl);
+}
+
+/* REVIEWS */
+.reviews-subtitle {
+  color: var(--accent-cl);
+}
+
+.reviews-pagination-item {
+  font-size: 28px;
+  line-height: 1.25;
+  color: var(--accent-cl);
+  opacity: 0.2;
+}
+
+.reviews-pagination-item.active {
+  opacity: 1;
+}
+
+/* ORDER */
+.order-link {
+  font-size: 16px;
+  line-height: 1.25;
+  color: currentColor;
+}
+
+.order-price {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: var(--accent-cl);
+}
+
+/* FOOTER */
+
+.footer {
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: var(--footer-cl);
+}
+
+.footer-link {
+  color: currentColor;
+}
+
+.footer-tel {
+  color: var(--main-cl);
+}
