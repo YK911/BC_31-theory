@@ -53,9 +53,11 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   margin-top: 0;
+}
+p {
+  margin: 0;
 }
 
 /* COMMON STYLES */
@@ -80,6 +82,8 @@ p {
 }
 
 .subtitle {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 28px;
   line-height: 1.25;
@@ -238,14 +242,71 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.features .subtitle {
-  margin-bottom: 20px;
-}
 
 .features-item {
   width: 510px;
 }
+/* technology */
+.technology-container {
+  display: flex;
+}
+.technology-content {
+  margin-right: 70px; /*по аналогии с дизайн секцией*/
+}
+
+/* warranty */
+.warranty-container {
+  display: flex;
+}
+.warranty-content {
+  margin-left: 70px;
+}
+
+.warranty-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.warranty-marker {
+  width: 13px;
+  height: 13px;
+  background-color: var(--accent-cl);
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
 /* HISTORY */
+.history-content {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.history-subcontent:first-child {
+  margin-right: 150px;
+}
+
+.subcontent-wrapper {
+  margin-bottom: 120px;
+}
+
+.subcontent-text:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.subcontent-text-last {
+  margin-top: 50px;
+  width: 510px;
+}
+
+.quotes-mark {
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.quotes-text {
+  margin: 0;
+  margin-bottom: 32px;
+  width: 382px;
+}
+
 .history-author {
   font-size: 16px;
   color: var(--quote-cl);
