@@ -252,11 +252,32 @@ p {
 }
 
 /* REVIEWS */
+.reviews-box{
+  display: flex;
+  flex-flow: column;
+  margin-left: 150px;
+}
+
+.review-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
 .reviews-subtitle {
   color: var(--accent-cl);
 }
 
+
+.reviews-pagination{
+  display: flex;
+}
+
+.reviews-pagination-item:last-child{
+  margin-right: 0;
+}
+
 .reviews-pagination-item {
+  margin-right: 30px;
   font-size: 28px;
   line-height: 1.25;
   color: var(--accent-cl);
