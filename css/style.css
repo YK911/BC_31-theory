@@ -42,6 +42,18 @@ a {
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
 /* COMMON STYLES */
@@ -72,8 +84,8 @@ ol {
 }
 
 .btn {
-  width: 400px;
-  height: 68px;
+  min-width: 200px;
+  padding: 22px 96px;
 
   font-family: inherit;
   font-weight: 600;
@@ -90,23 +102,84 @@ ol {
   cursor: pointer;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.section {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
 /* HEADER */
+.header {
+  padding-top: 70px;
+  padding-bottom: 35px;
+}
+
+.header-container {
+  display: flex;
+}
+
 .nav {
   font-size: 16px;
   line-height: 1.19;
+  margin-left: auto;
 }
 
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 77px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
 .nav-link {
   color: currentColor;
 }
 
 /* HERO */
+.hero {
+  padding-top: 35px;
+  padding-bottom: 85px;
+}
+.hero-wrapper {
+  margin-bottom: 110px;
+}
+
 .hero-description {
+  width: 320px;
+  margin-bottom: 36px;
   font-size: 16px;
   line-height: 1.25;
 }
 
+.hero-description:last-child {
+  width: 135px;
+}
+
 .hero-title {
+  width: 470px;
+  margin-bottom: 60px;
+
   font-weight: 600;
   font-size: 74px;
   line-height: 1;
@@ -114,6 +187,15 @@ ol {
   text-transform: uppercase;
 
   color: var(--title-cl);
+}
+
+.hero-title,
+.hero-btn {
+  margin-left: 104px;
+}
+
+.hero-img {
+  display: block;
 }
 
 /* HISTORY */
@@ -159,6 +241,8 @@ ol {
 /* FOOTER */
 
 .footer {
+  padding-top: 85px;
+  padding-bottom: 75px;
   font-size: 16px;
   line-height: 1.25;
 
@@ -171,4 +255,8 @@ ol {
 
 .footer-tel {
   color: var(--main-cl);
+}
+
+.list {
+  outline: 5px dashed greenyellow;
 }
