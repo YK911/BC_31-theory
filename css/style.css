@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../fonts/Gilroy-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +9,8 @@
 
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff");
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -67,6 +69,7 @@ p {
 }
 
 .title {
+  margin-bottom: 50px;
   font-weight: 600;
   font-size: 54px;
   line-height: 1.2;
@@ -114,7 +117,7 @@ p {
 }
 
 .container {
-  width: 1310px;
+  width: 1130px;
   padding: 0 15px;
   margin: 0 auto;
   outline: 1px solid red;
@@ -198,6 +201,50 @@ p {
   display: block;
 }
 
+/* desing */
+.desing-container {
+  display: flex;
+}
+.desing-content {
+  margin-left: 70px;
+}
+
+/* advantages */
+.advantages-container {
+  width: 1130px;
+}
+
+.advantages-content {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: disc;
+  justify-content: space-between;
+}
+.advantages-content-item {
+  flex-basis: 538px;
+  margin-bottom: 20px;
+}
+.advantages-content-item::marker {
+  color: var(--accent-cl);
+  font-size: 35px;
+  line-height: 1;
+}
+.advantages-content-item:nth-child(n + 5) {
+  margin-bottom: 0;
+}
+
+/* features */
+.features-subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+.features .subtitle {
+  margin-bottom: 20px;
+}
+
+.features-item {
+  width: 510px;
+}
 /* HISTORY */
 .history-author {
   font-size: 16px;
