@@ -1,0 +1,94 @@
+:root {
+    /* Настройка переменных для переиспользования в контейнере */
+  --item: 1;
+  --gap: 30px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: blueviolet;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+  width: 800px;
+  outline: 1px solid red;
+
+}
+
+/* Утилитарный класс для создания сетки */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-1 * var(--gap));
+  margin-bottom: calc(-1 * var(--gap));
+
+  margin-top: 150px;
+}
+
+/* Настройка резмера и отступов для одного элемента в сетке */
+.grid-item {
+  flex-basis: calc(100% / var(--item) - var(--gap));
+  margin-right: var(--gap);
+  margin-bottom: var(--gap);
+
+  height: 150px;
+
+  background-color: tomato;
+
+
+}
+
+.first {
+    --item: 3;
+    --gap: 50px;
+
+  /* background-color: #fff; */
+
+}
+
+.second {
+    --item: 4;
+}
+
+.first-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-item:last-child {
+    order: -1;
+}
+
+
+.footer {
+    padding: 60px 0;
+    background: #2F303A;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.address {
+    margin-right: 50px;
+}
